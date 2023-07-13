@@ -1,12 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
+
 .hero{
     height: 100%;
     width: 100%;
-    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../images/background.jpg");
+    background-image:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url("../images/background.jpg");
     background-position: center;
     background-size:cover ;
     position:absolute;
@@ -100,4 +101,75 @@ span{
 
 #Register{
     left:450px
+}
+
+
+/* --------------------Header copied code------------------------ */
+
+
+
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav .logo {
+    margin-right: 20px;
+
+}
+
+nav img {
+    width: 60px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.nav-links ul li:first-child {
+    margin-left: 0;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px 8px 0;
+    font-size: 18px;
+}
+
+.nav-links ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li a:hover::after {
+    width: 100%;
 }
